@@ -1,0 +1,52 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "onesignal-cordova-plugin-pgb-compat": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "com.google.playservices": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "android.support.v4": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "android.support.v4": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "com.google.playservices": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "onesignal-cordova-plugin-pgb-compat": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        }
+    }
+}
