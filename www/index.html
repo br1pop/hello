@@ -54,14 +54,32 @@
     <body ng-app="myApp">
         
         <!-- *** Header bar *** -->
-        <div class="bar bar-header bar-dark redBackGround"> 
+        <!--div class="bar bar-header bar-dark redBackGround"> 
             <div class="h1 title">Plomo</div>
             <img src="img/musico.jpg" class="img-profile">                       
-        </div>
+        </div-->
+        <div class="bar bar-header bar-calm-900 redBackGround">
+   <div class="buttons buttons-left header-item"> 
+       <span class="left-buttons"> 
+           <button class="button button-icon button-clear ion-navicon"> </button>
+       </span>
+    </div>
+   <div class="h1 title title-left light">Plomo</div>
+   <div class="buttons buttons-right header-item">
+       <span class="right-buttons">
+           <button class="button button-balanced button-fab"> 
+               <img src="img/musico.jpg" class="img-profile">
+               <!--i class="icon ion-star"></i--> 
+           </button>
+       </span> 
+    </div>
+</div>  
         <!-- *** -->
         
         <!-- *** Content *** -->
-        <ion-nav-view></ion-nav-view>
+        <div class="content">
+            <ion-nav-view></ion-nav-view>
+        </div>
         <!-- *** -->    
         
         <!-- *** Footer *** -->
