@@ -31,42 +31,44 @@
 
                 var map = new google.maps.Map(document.getElementById("map"),mapOptions);
 
-                
-                var marker = new google.maps.Marker({
+                //Marcadores
+                var estoyAqui = new google.maps.Marker({
                     map: map,
                     animation: google.maps.Animation.DROP,
                     position: latLng,
                     title: "Estoy Aqui"
-                });                   
- 
+                });   
+                var markers=[];
+                
+                //Recibo json con marcadores desde api
                 Data.getMarcadores().success(function(data) {
                     for(var i = 0; i<data.length; i++){ 
-                        var latLng = new google.maps.LatLng(data[i].lat, data[i].lng);
-                        new google.maps.Marker({
-                            map: map,
-                            animation: google.maps.Animation.DROP,
-                            position: latLng,
-                            icon:"http://miplomo.com/"+data[i].icono
-                        });
+                        markers[i] = data[i];
                     }
                 }); 
+                console.log(markers);
                 
-                var infowindow = new google.maps.InfoWindow({
-                    content: contentString
-                });
-
-                marker.addListener('click', function() {
-                    infowindow.open(map, marker);
-                });
-
-                var titulo = "Alto Voltaje";
-                var perfil="Estudio";
-                var contentString = "pepe";/*'<div id="content">'+
-                  '<h1 id="firstHeading" class="firstHeading">'+titulo+'</h1>'+
-                  '<div id="bodyContent">'
-                    +perfil+
-                  '</div>'+
-                  '</div>';*/        
+                var infoWindow = new google.maps.InfoWindow();
+                for (var i = 0; i < markers.length; i++) {
+                    var data = markers[i];
+                    var latLng = new google.maps.LatLng(data.lat, data.lng);
+                    var marker = new google.maps.Marker({
+                        position: myLatlng,
+                        icon:"http://miplomo.com/"+data.icono,
+                        map: map,
+                        clickable: true,
+                        customInfo: data
+                    });
+ 
+                }
+                
+                
+                        
+                        google.maps.event.addListener(marker, 'click', function() {
+                            alert(marker.customInfo.nombre);
+                        });
+                    
+                       
             }
             //google.maps.event.addDomListener(window, 'load', initialize);
                    
