@@ -1,24 +1,26 @@
-<ion-list>
-    <!--ng-repeat perfil in logueado-->
-    <ion-item nav-clear menu-close class="item-icon-left item-avatar">
-        <i class="icon ion-record"></i>
-        <h2>List title</h2>
-        <p>List description</p>
-    </ion-item>
-    <ion-item nav-clear menu-close class="item-icon-left item-avatar">
-        <i class="icon ion-record"></i>
-        <h2>List title</h2>
-        <p>List description</p>
-    </ion-item>    
-    <ion-item nav-clear menu-close class="item-icon-left item-avatar">
-        <i class="icon ion-record"></i>
-        <h2>List title</h2>
-        <p>List description</p>
-    </ion-item>
-    <ion-item nav-clear menu-close class="item-icon-left item-avatar">
-        <i class="icon ion-record" class="img-profile"></i>
-        <h2>List title</h2>
-        <p>List description</p>
-    </ion-item>
-</ion-list>
-        
+<ion-modal-view> 
+    <ion-list scroll="true">
+        <!--ng-repeat perfil in logueado-->
+        <ion-item nav-clear menu-close class="item-icon-left item-avatar" ng-click="cambiarPerfil()">
+            <img src="img/musico.jpg" class="img-profile">  
+            <h2>Nombre Perfil</h2>
+            <p>Tipo Perfil</p>
+        </ion-item>
+        <ion-item nav-clear menu-close class="item-icon-left item-avatar" ng-click="cambiarPerfil()">
+            <img src="img/musico.jpg" class="img-profile">  
+            <h2>Nombre Perfil</h2>
+            <p>Tipo Perfil</p>
+        </ion-item>    
+        <ion-item nav-clear menu-close class="item-icon-left item-avatar" ng-click="cambiarPerfil()">
+            <img src="img/musico.jpg" class="img-profile">  
+            <h2>Nombre Perfil</h2>
+            <p>Tipo Perfil</p>
+        </ion-item>
+        <ion-item nav-clear menu-close class="item-icon-left item-avatar" ng-click="cambiarPerfil()">
+            <img src="img/musico.jpg" class="img-profile">  
+            <h2>Nombre Perfil</h2>
+            <p>Tipo Perfil</p>
+        </ion-item>
+    </ion-list>
+    <button id="fab-perfiles" class="button button-raised button-fab button-assertive" nav-view="active"><i class="icon ion-plus"></i></button>
+</ion-modal-view>
