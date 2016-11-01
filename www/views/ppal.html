@@ -1,25 +1,94 @@
+<ion-side-menus enable-menu-with-back-views="true">
+
+	<ion-side-menu-content>
+        <div class="bar bar-header bar-dark redBackGround"> 
+            <div class="h1 title">Plomo</div>
+            <img src="img/musico.jpg" class="img-profile">                       
+        </div>
+        
+        <div class="bar bar-header bar-calm-900 redBackGround">
+           <div class="buttons buttons-left header-item"> 
+               <span class="left-buttons"> 
+                   <button class="button button-icon button-clear ion-navicon" menu-toggle="left"> </button>
+               </span>
+            </div>
+           <div class="h1 title title-left light">Plomo</div>
+           <div class="buttons buttons-right header-item">
+            <span class="right-buttons">
+               <button class="button button-balanced button-fab" ng-click="verPerfiles()"> 
+                   <img src="img/musico.jpg" class="img-profile">
+                   <i class="icon ion-star"></i> 
+               </button>
+            </span> 
+            </div>
+        </div>
+        
+        <ion-content class="has-header has-footer">  
+            <ion-nav-view name="menuContent"></ion-nav-view>
+        </ion-content>
+
+             
+        <div class="tabs-striped tabs-color-assertive">
+            <div class="tabs">                
+                <a class="tab-item" href="#">
+                    <i class="icon ion-home"></i>
+                    Test
+                </a>
+                <a class="tab-item active"  id="pedirPlomo" href="#">        
+                    Pedirle a Plomo
+                </a>     
+                <a class="tab-item" href="#">
+                    <i class="icon ion-gear-a"></i>
+                    Settings
+                </a>
+            </div>
+            </div> 
+                
+	</ion-side-menu-content>
+    
+
+    
+	<ion-side-menu side="left">
+
+	<ion-header-bar class="bar bar-header bar-calm-900 redBackGround">
+		<h1 class="title" style>Menu</h1>
+	</ion-header-bar>
+
+		<ion-content>
+
+		<ion-list>
+			<ion-item href="#/ppal/mapa" menu-close>Prueba Mapa</ion-item>
+		</ion-list>
+
+		</ion-content>
+
+	</ion-side-menu>
+
+</ion-side-menus>
+
+<!--
 <body>
-        <!-- *** Header bar *** -->
+        <!-- *** Header bar ***
         <div class="bar bar-header bar-dark redBackGround"> 
             <div class="h1 title">Plomo</div>
             <img src="img/musico.jpg" class="img-profile">                       
         </div>
         <div class="bar bar-header bar-calm-900 redBackGround">
-   <div class="buttons buttons-left header-item"> 
-       <span class="left-buttons"> 
-           <button class="button button-icon button-clear ion-navicon" menu-toggle="left"> </button>
-       </span>
-    </div>
-   <div class="h1 title title-left light">Plomo</div>
-   <div class="buttons buttons-right header-item">
-       <span class="right-buttons">
-           <button class="button button-balanced button-fab" ng-click="verPerfiles()"> 
-               <img src="img/musico.jpg" class="img-profile">
-               <i class="icon ion-star"></i> 
-           </button>
-       </span> 
-    </div>
-</div>  
+           <div class="buttons buttons-left header-item" ng-click="toggleLeft()"> 
+               <span class="left-buttons"> 
+                   <button class="button button-icon button-clear ion-navicon" menu-toggle="left"> </button>
+               </span>
+            </div>
+           <div class="h1 title title-left light">Plomo</div>
+           <div class="buttons buttons-right header-item">
+            <span class="right-buttons">
+               <button class="button button-balanced button-fab" ng-click="verPerfiles()"> 
+                   <img src="img/musico.jpg" class="img-profile">
+                   <i class="icon ion-star"></i> 
+               </button>
+            </span> 
+            </div>
+        </div>  
 
 
  <div class="tabs-striped tabs-color-assertive">
@@ -39,3 +108,4 @@
 </div>      
     
 </body>
+-->
