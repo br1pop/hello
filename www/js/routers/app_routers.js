@@ -2,7 +2,7 @@
 	"use strict";
 	angular.module("myApp").config(function($stateProvider, $urlRouterProvider){
 
-		$urlRouterProvider.otherwise("/mapa");
+		$urlRouterProvider.otherwise("/ppal");
 
 		$stateProvider
 
@@ -15,7 +15,19 @@
         .state("mapa", {
 			url:"/mapa",
             templateUrl:"views/mapa.html",
-            controller:"initCtrl"
+            controller:"mapaCtrl"
+		})
+    
+        .state("ppal", {
+			url:"/ppal",
+            templateUrl:"views/ppal.html",
+            controller:"ppalCtrl"
+		})
+        
+        .state("perfiles", {
+			url:"/perfiles",
+            templateUrl:"views/perfiles.html",
+            controller:"perfilesCtrl"
 		})
 
 
