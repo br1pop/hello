@@ -11,6 +11,12 @@
             templateUrl:"views/home.html",
             controller:"initCtrl"
 		})
+        
+        .state("cambiarPerfil", {
+			url:"/home",
+            templateUrl:"views/cambiarPerfil.html",
+            controller:"initCtrl"
+		})
 
 
 	});
