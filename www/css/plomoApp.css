@@ -30,3 +30,9 @@
     top:70%;
     left:75%;
 }
+
+.list.card.stable-bg{
+    position: relative;
+    width: 93%;
+    left:2%;
+}

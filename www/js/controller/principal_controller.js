@@ -1,13 +1,14 @@
 (function(global) {
 	//"use strict";
     
-   angular.module("myApp").controller("ppalCtrl", function($scope,$rootScope, Data, $ionicModal, $location, DBLocal, DBLocalLoginDeUsuario, $ionicSideMenuDelegate){
+   angular.module("myApp").controller("principalCtrl", function($scope,$rootScope, Data, $ionicModal, 
+                            $location, $ionicSideMenuDelegate){
        
        //se guarda el usuario logueado
        $rootScope.logueado;
        
        $scope.verPerfiles = function(){
-           $location.url("ppal/perfiles");
+           $location.url("principal/cambiar_perfil");
        }
        
          $scope.toggleLeft = function() {

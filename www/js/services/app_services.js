@@ -6,8 +6,8 @@
 	});
 
 	angular.module("myApp").service("Data", function($http, Config){
-		//recuperação de dados
-		this.getMarcadores = function(){
+		
+        this.getMarcadores = function(){
 			return $http({
 				method: "GET",
 				url: Config.getUrl+"CI/index.php/Rest/Marcadores",

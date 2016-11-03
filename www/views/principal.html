@@ -1,6 +1,10 @@
+<!-- *** Principal *** -->
 <ion-side-menus enable-menu-with-back-views="true">
 
+    <!-- *** Medio *** --> 
 	<ion-side-menu-content>
+        
+        <!-- *** Header *** -->
         <div class="bar bar-header bar-dark redBackGround"> 
             <div class="h1 title">Plomo</div>
             <img src="img/musico.jpg" class="img-profile">                       
@@ -22,13 +26,16 @@
             </span> 
             </div>
         </div>
+    <!-- *** -->    
         
-        <ion-content class="has-header has-footer">  
-            <ion-nav-view name="menuContent"></ion-nav-view>
-        </ion-content>
-
-             
-        <div class="tabs-striped tabs-color-assertive">
+    <!-- *** Content *** -->
+    <ion-content class="has-header has-footer">  
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-content>
+    <!-- *** -->     
+        
+    <!-- *** Footer *** -->  
+        <div class="tabs-striped tabs-color-assertive">            
             <div class="tabs">                
                 <a class="tab-item" href="#">
                     <i class="icon ion-home"></i>
@@ -42,31 +49,32 @@
                     Settings
                 </a>
             </div>
-            </div> 
-                
-	</ion-side-menu-content>
-    
+        </div> 
+        <!-- *** -->       
+        
+    </ion-side-menu-content>   
+    <!-- *** -->
 
-    
-	<ion-side-menu side="left">
-
-	<ion-header-bar class="bar bar-header bar-calm-900 redBackGround">
-		<h1 class="title" style>Menu</h1>
-	</ion-header-bar>
-
-		<ion-content>
-
-		<ion-list>
-			<ion-item href="#/ppal/mapa" menu-close>Prueba Mapa</ion-item>
-		</ion-list>
-
-		</ion-content>
-
+    <!-- *** Left *** -->
+    <ion-side-menu side="left">
+        <ion-header-bar class="bar bar-header bar-calm-900 redBackGround">
+            <h1 class="title" style>Menu</h1>
+        </ion-header-bar>
+    <ion-content> 
+    <ion-list>
+        <ion-item href="#/principal/mapa" menu-close>Prueba Mapa</ion-item>
+    </ion-list>
+    </ion-content>
 	</ion-side-menu>
-
+    <!-- *** -->
+    
+    <!-- *** Right *** -->
+    <!-- *** -->
+    
 </ion-side-menus>
+<!-- *** -->
 
-<!--
+<!-- BORRAR 
 <body>
         <!-- *** Header bar ***
         <div class="bar bar-header bar-dark redBackGround"> 
