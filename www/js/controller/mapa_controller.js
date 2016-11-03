@@ -1,7 +1,7 @@
 (function(global) {
 	//"use strict";
     
-   angular.module("myApp").controller("mapaCtrl", function($scope, Data, $ionicModal, $location, DBLocal, DBLocalLoginDeUsuario,$ionicScrollDelegate){
+   angular.module("myApp").controller("mapaCtrl", function($scope, Data, $ionicModal, $location,$ionicScrollDelegate){
 
         document.addEventListener('deviceready', function () {
         

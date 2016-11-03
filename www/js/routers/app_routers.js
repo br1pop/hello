@@ -2,58 +2,47 @@
 	"use strict";
 	angular.module("myApp").config(function($stateProvider, $urlRouterProvider){
 
-		$urlRouterProvider.otherwise("/notificaciones");
+		$urlRouterProvider.otherwise("/principal");
 
 		$stateProvider
 
-		.state("home", {
-			url:"/home",
-            templateUrl:"views/home.html",
-            controller:"initCtrl"
+        .state("principal", {
+			url:"/principal",
+            templateUrl:"views/principal.html",
+            controller:"principalCtrl"
 		})
         
-        .state("mapa", {
-			url:"/mapa",
-            templateUrl:"views/mapa.html",
-            controller:"mapaCtrl"
-		})
-    
-        .state("ppal", {
-			url:"/ppal",
-            templateUrl:"views/ppal.html",
-            controller:"ppalCtrl"
-		})
-        
-                .state("ppal.mapa", {
+                .state("principal.mapa", {
                     url:"/mapa",
                     views:{
                         'menuContent':{
-                            templateUrl:"views/mapa.html"
+                            templateUrl:"views/mapa.html",
+                            controller:"mapaCtrl"
                         }
                     }
                 })
         
-                .state("ppal.perfiles", {
-                    url:"/perfiles",
+                .state("principal.cambiar_perfil", {
+                    url:"/cambiar_perfil",
                     views:{
                         'menuContent':{
-                            templateUrl:"views/perfiles.html",
+                            templateUrl:"views/cambiar_perfil.html",
                             controller:"perfilesCtrl"
                         }
                     }
                 })
-        
-        .state("perfiles", {
-			url:"/perfiles",
-            templateUrl:"views/perfiles.html",
-            controller:"perfilesCtrl"
-		})
-        
-        .state("notificaciones", {
-			url:"/notificaciones",
-            templateUrl:"views/notificaciones.html",
-            controller:"notificacionesCtrl"
-		})
+
+                .state("cambiar_perfil", {
+                    url:"/cambiar_perfil",
+                    templateUrl:"views/cambiar_perfil.html",
+                    controller:"perfilesCtrl"
+                })
+
+                .state("notificaciones", {
+                    url:"/notificaciones",
+                    templateUrl:"views/notificaciones.html",
+                    controller:"notificacionesCtrl"
+                })
 
 
 	});
