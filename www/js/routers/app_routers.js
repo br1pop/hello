@@ -24,24 +24,24 @@
             controller:"ppalCtrl"
 		})
         
-                .state("ppal.mapa", {
-                    url:"/mapa",
-                    views:{
-                        'menuContent':{
-                            templateUrl:"views/mapa.html"
-                        }
-                    }
-                })
-        
-                .state("ppal.perfiles", {
-                    url:"/perfiles",
-                    views:{
-                        'menuContent':{
-                            templateUrl:"views/perfiles.html",
-                            controller:"perfilesCtrl"
-                        }
-                    }
-                })
+        .state("ppal.mapa", {
+            url:"/mapa",
+            views:{
+            'menuContent':{
+                templateUrl:"views/mapa.html"
+            }
+            }
+        })
+
+        .state("ppal.perfiles", {
+            url:"/perfiles",
+            views:{
+                'menuContent':{
+                    templateUrl:"views/perfiles.html",
+                    controller:"perfilesCtrl"
+                }
+            }
+        })
         
         .state("perfiles", {
 			url:"/perfiles",

@@ -1,7 +1,11 @@
 Aplicação criada com Intel XDK utilizando Ionic e Angularjs
 =====================================================================
 
+<<<<<<< HEAD
 Esta aplicação foi desenvolvida por Sergioo Costa do canal Full Stacker. 
+=======
+Esta aplicação foi desenvolvida por Tomas Costa do canal Full Stacker. 
+>>>>>>> refs/remotes/origin/master
 
 Para que sua aplicação funcione corretamente é necessario que você inicie com
 HTML5 + Cordova no Intel XDK. 

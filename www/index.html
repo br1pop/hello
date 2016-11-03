@@ -29,8 +29,17 @@
         <script type="application/javascript" src="marginal/marginal-position.js"></script>
         <script type="application/javascript" src="ionic/js/ionic.bundle.js"></script>
         <script type="application/javascript" src="js/index_init_services.js"></script>
+        
+        
         <!-- CONTROLLER -->
         <script type="application/javascript" src="js/controller/app_controller.js"></script>
+        <script type="application/javascript" src="js/controller/mapa_controller.js"></script>
+        <script type="application/javascript" src="js/controller/push_controller.js"></script>
+        <script type="application/javascript" src="js/controller/ppal_controller.js"></script>
+        <script type="application/javascript" src="js/controller/perfiles_controller.js"></script>
+        <script type="application/javascript" src="js/controller/avisos_controller.js"></script>
+        <script type="application/javascript" src="js/controller/notificaciones_controller.js"></script>
+        
         <!-- ROUTERS -->
         <script type="application/javascript" src="js/routers/app_routers.js"></script>
         <!-- SERVICES -->
@@ -52,8 +61,20 @@
         <!-- *** -->
 
     <body ng-app="myApp">
+        <!-- *** Content *** 
+        <!--<div class="content">-->
+            <ion-nav-view>
+            </ion-nav-view>
+        <!--</div>-->
         
+    </body>
+
+</html>
+
+
+        <!-- *** -->    
         <!-- *** Header bar *** -->
+<<<<<<< HEAD
         <!--ion-nav-view></ion-nav-view>
         <!-- *** -->
         
@@ -67,3 +88,46 @@
     </body>
 
 </html>
+=======
+        <!--div class="bar bar-header bar-dark redBackGround"> 
+            <div class="h1 title">Plomo</div>
+            <img src="img/musico.jpg" class="img-profile">                       
+        </div
+        <div class="bar bar-header bar-calm-900 redBackGround">
+   <div class="buttons buttons-left header-item"> 
+       <span class="left-buttons"> 
+           <button class="button button-icon button-clear ion-navicon"> </button>
+       </span>
+    </div>
+   <div class="h1 title title-left light">Plomo</div>
+   <div class="buttons buttons-right header-item">
+       <span class="right-buttons">
+           <button class="button button-balanced button-fab"> 
+               <img src="img/musico.jpg" class="img-profile">
+               <!--i class="icon ion-star"></i 
+           </button>
+       </span> 
+    </div>
+</div>  
+        <!-- *** -->
+        
+
+        
+        <!-- *** Footer ***
+         <div class="tabs-striped tabs-color-assertive">
+            <div class="tabs">                
+                <a class="tab-item" href="#">
+                    <i class="icon ion-home"></i>
+                    Test
+                </a>
+                <a class="tab-item active"  id="pedirPlomo" href="#">        
+                    Pedirle a Plomo
+                </a>     
+                <a class="tab-item" href="#">
+                    <i class="icon ion-gear-a"></i>
+                    Settings
+                </a>
+            </div>
+        </div>        
+        <!-- *** -->
+>>>>>>> refs/remotes/origin/master
