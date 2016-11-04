@@ -11,6 +11,12 @@
            $location.url("principal/cambiar_perfil");
        }
        
+       $scope.inicializarMapa = function(){
+            Data.inicializarMapa();
+           
+       $scope.titulo = $rootScope.markerActual.nombre
+       }
+       
          $scope.toggleLeft = function() {
             $ionicSideMenuDelegate.toggleLeft();
           };

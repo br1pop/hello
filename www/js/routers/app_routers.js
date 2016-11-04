@@ -22,6 +22,15 @@
                     }
                 })
         
+                .state("principal.perfil_estudio", {
+                    url:"/perfil_estudio",
+                    views:{
+                        'menuContent':{
+                            templateUrl:"views/perfil_estudio.html"
+                        }
+                    }
+                })
+        
                 .state("principal.cambiar_perfil", {
                     url:"/cambiar_perfil",
                     views:{
@@ -30,12 +39,6 @@
                             controller:"perfilesCtrl"
                         }
                     }
-                })
-
-                .state("cambiar_perfil", {
-                    url:"/cambiar_perfil",
-                    templateUrl:"views/cambiar_perfil.html",
-                    controller:"perfilesCtrl"
                 })
 
                 .state("notificaciones", {
