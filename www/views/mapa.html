@@ -1,2 +1,8 @@
 <div id="map"></div>
-<div id="perfil" ng-include="'views/perfil_estudio.html'"></div>
+
+<div id="perfil_estudio" class="perfil" style="visibility:hidden; height:100%; position:absolute" 
+    ng-controller="perfilEstudioCtrl" ng-include="'views/perfil_estudio.html'"></div>
+
+<div id="perfil_profesor" class="perfil" style="visibility:hidden; height:100%; position:absolute" 
+    ng-controller="perfilProfesorCtrl" ng-include="'views/perfil_profesor.html'"></div>
+

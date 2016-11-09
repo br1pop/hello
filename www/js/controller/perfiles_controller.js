@@ -7,6 +7,9 @@
             $location.url("principal/cambiar_perfil");  
         }  
        
+        $scope.nuevoPerfil = function(){
+           $location.url("principal/nuevo_perfil_categorias");
+       }
     });
     
 })();

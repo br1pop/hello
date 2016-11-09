@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-1";
+  src:url("fonts/untitled-font-1.eot");
+  src:url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
+    url("fonts/untitled-font-1.woff") format("woff"),
+    url("fonts/untitled-font-1.ttf") format("truetype"),
+    url("fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xylophone:before {
+  content: "\62";
+}
+.icon-acoustic-guitar:before {
+  content: "\63";
+}
+.icon-audio-cable:before {
+  content: "\64";
+}
+.icon-banjo:before {
+  content: "\65";
+}
+.icon-bass-guitar:before {
+  content: "\66";
+}
+.icon-cassette-tape:before {
+  content: "\67";
+}
+.icon-conga:before {
+  content: "\68";
+}
+.icon-cymbals:before {
+  content: "\69";
+}
+.icon-loudspeaker:before {
+  content: "\6a";
+}
+.icon-lyre:before {
+  content: "\6b";
+}
+.icon-mandolin:before {
+  content: "\6c";
+}
+.icon-maraca:before {
+  content: "\6d";
+}
+.icon-metronome:before {
+  content: "\6e";
+}
+.icon-microphone:before {
+  content: "\6f";
+}
+.icon-microphone-01:before {
+  content: "\70";
+}
+.icon-note:before {
+  content: "\71";
+}
+.icon-note-01:before {
+  content: "\72";
+}
+.icon-flute:before {
+  content: "\73";
+}
+.icon-goblet-drum:before {
+  content: "\74";
+}
+.icon-guitar-pick:before {
+  content: "\75";
+}
+.icon-harp:before {
+  content: "\76";
+}
+.icon-saxophone:before {
+  content: "\77";
+}
+.icon-reel-to-reel-tape-recorder:before {
+  content: "\78";
+}
+.icon-piano:before {
+  content: "\79";
+}
+.icon-pan-flute:before {
+  content: "\7a";
+}
+.icon-vibraphone:before {
+  content: "\41";
+}
+.icon-vinyl-record:before {
+  content: "\42";
+}
+.icon-violin:before {
+  content: "\43";
+}
+.icon-tuba:before {
+  content: "\44";
+}
+.icon-trumpet:before {
+  content: "\45";
+}
+.icon-trombone:before {
+  content: "\46";
+}
+.icon-triangle:before {
+  content: "\47";
+}
+.icon-treble-clef:before {
+  content: "\48";
+}
+.icon-tambourine-01:before {
+  content: "\49";
+}
+.icon-tambourine:before {
+  content: "\4a";
+}
+.icon-synthesizer:before {
+  content: "\4b";
+}
+.icon-snare-drum:before {
+  content: "\4c";
+}
+.icon-electric-guitar:before {
+  content: "\4d";
+}
+.icon-accordion:before {
+  content: "\61";
+}

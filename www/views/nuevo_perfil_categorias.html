@@ -1,0 +1,29 @@
+<ion-view>
+
+    <div style="width:100%;height:20%">
+        <h3 style="text-align:center;vertical-align:center;position:relative;top:50%">Selecciona el tipo de perfil a crear</h3>
+    </div>
+    
+    <div class="row responsive" style="width:100%;height:40%"> 
+        <button id="categoria_musico" class="col col-50 categoria_perfil
+         waves-effect waves-button waves-classic" ng-click="nuevoPerfilMusico()">
+            Musico
+        </button>
+        <button id="categoria_banda" class="col col-50 categoria_perfil
+        waves-effect waves-button waves-classic" ng-click="nuevoPerfilBanda()">
+            Banda
+        </button> 
+    </div>
+    
+    <div class="row responsive" style="width:100%;height:40%">
+        <button id="categoria_profesor" class="col-50 categoria_perfil
+        waves-effect waves-button waves-classic"  ng-click="nuevoPerfilProfesor()">
+            Profesor
+        </button>
+        <button id="categoria_estudio" class="col-50 categoria_perfil
+        waves-effect waves-button waves-classic" ng-click="nuevoPerfilEstudio()">
+            Estudio
+        </button>
+    </div>
+
+</ion-view>

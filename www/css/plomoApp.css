@@ -1,3 +1,70 @@
+/********
+** Mapa **
+ ********/
+#map {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding : 0px;
+}
+
+.gm-style * {
+  width:auto;
+  height:auto;
+}
+
+
+
+/**********
+** Login **
+ *********/
+
+.bg_login{
+    /* margin: 0.5rem ; */
+    background-image: url('../img/login_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black ;
+    width: 100%;
+    height: 100%;
+}
+
+#row_fb{
+    position: relative;
+    width: 100%;
+    top: 70%;
+}
+#login_fb{
+    border: 2px solid;
+    border-color: white;
+    position: relative;
+    color: white;
+    font-size: 18px;
+    width: 100%
+}
+
+
+
+/*************
+ * Principal *
+ *************/
+
+.header_menu{
+    background-color:rgb(26,34,38);
+}
+
+.content_menu{
+    background-color:rgb(34,45,50); 
+}
+
+.item_menu{
+    color:whitesmoke;
+}
+
+#pedirPlomo{
+    border-radius: 50px 50px 0px 0px;
+}
+
 .redBackGround{
     background-color: #dd4b39 !important;
 }
@@ -20,15 +87,12 @@
     float:right;
 }
 
-/*////////*/
-/*Perfiles*/
-/*////////*/
+
+/*******************
+ * Cambio Perfiles *
+ *******************/
 
 #fab-perfiles{
-    opacity: 1;
-    position: absolute;
-    top:70%;
-    left:75%;
 }
 
 .list.card.stable-bg{
@@ -36,3 +100,122 @@
     width: 93%;
     left:2%;
 }
+
+.perfil{
+    position: absolute;
+    height: 50%;
+    top: inherit;
+    width: 100%;
+}
+
+.categoria_perfil{
+    border:10px solid white;
+    background: url('../img/login_bg.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    text-align:center;
+    line-height:50px;
+    color:white;
+    font-size: 25px;
+}
+
+
+/******************
+** Perfil Estudio **
+ ******************/
+
+
+#imagen_estudio{
+    height:35%;
+    background-size: cover;
+    background-position: center;
+}
+
+.buttons_perfil{
+    background-color: rgba(128,128,128,0.3);
+    width:100%;
+    position:relative;
+    height: 100%;
+}
+
+#fab-reservar{
+    position:absolute;
+    left:80%;
+    top:85%;
+}
+
+#servicios_estudio{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    background-color: #f95e4b;
+    text-align: left;
+}
+
+.servicios_text{
+    position: relative;
+    top:5%;
+    color:white;
+    size:2;
+}
+
+/******************
+** Perfil Profesor **
+ ******************/
+
+#imagen_profesor{
+    height:30%;
+    background-size: cover;
+    background-position: center;
+}
+
+#servicios_profesor{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    background-color: #ff7665;
+}
+
+.servicio{
+    position: relative;
+    top: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.icono_servicio{
+    color:#dd4b39;
+}
+
+.round-button {
+    width:40px;
+    height:40px;
+    border-radius: 100%;
+    border-color:#dd4b39;
+    background: whitesmoke;
+    line-height:50%;
+    text-align:center;
+}
+
+
+/******************
+** Perfil Musico  **
+ ******************/
+
+#imagen_musico{
+    height:30%;
+    background-size: cover;
+    background-position: center;
+}
+
+.avatar_perfil {
+    width:100px;
+    height:100px;
+    background-color: aquamarine;
+    border-radius: 100%;
+    border-color: whitesmoke;
+    /*background-image: url('../img/musico.jpg');*/
+}
+
+
